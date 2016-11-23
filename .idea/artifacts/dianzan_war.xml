@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dianzan:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="dianzan.war">
+      <element id="artifact" artifact-name="dianzan:war exploded" />
+    </root>
+  </artifact>
+</component>
