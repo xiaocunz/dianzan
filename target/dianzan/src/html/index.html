@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-controller="indexCtrl">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a ng-href="#/blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#/services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#/contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#/faq">FAQ</a>
+                    </li>
+                    <!--<li class="dropdown">-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                            <!--<li>-->
+                                <!--<a href="portfolio-1-col.html">1 Column Portfolio</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="portfolio-2-col.html">2 Column Portfolio</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="portfolio-3-col.html">3 Column Portfolio</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="portfolio-4-col.html">4 Column Portfolio</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="portfolio-item.html">Single Portfolio Item</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li class="dropdown">-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                            <!--<li>-->
+                                <!--<a href="blog.html">Blog Home 1</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="blog-home-2.html">Blog Home 2</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="blog-post.html">Blog Post</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <li>
+                        <a ng-href="#/about">About</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Me <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Profile</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Login Out</a>
+                            </li>
+                            <!--<li>-->
+                                <!--<a href="pricing.html">Pricing Table</a>-->
+                            <!--</li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div ng-view></div>
+
+    <!-- jQuery -->
+    <script src="../lib/jquery/jquery-3.1.1.min.js"></script>
+
+    <!-- angular -->
+    <script src="../lib/angular/angular.min.js"></script>
+    <script src="../lib/angular/angular-route.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- controller file -->
+    <script src="../script/app.js"></script>
+    <script src="../script/controller/indexCtrl.js"></script>
+    <script src="../script/controller/blogCtrl.js"></script>
+    <script src="../script/controller/aboutCtrl.js"></script>
+    <script src="../script/controller/contactCtrl.js"></script>
+    <script src="../script/controller/servicesCtrl.js"></script>
+    <script src="../script/controller/faqCtrl.js"></script>
+
+    <!-- service file -->
+    <script src="../script/service/User.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
