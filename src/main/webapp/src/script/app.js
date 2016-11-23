@@ -5,23 +5,23 @@ var app = angular.module('app', [
 app.config(function ($routeProvider) {
     $routeProvider
         .when('/blog', {
-            templateUrl: 'blog.html',
+            templateUrl: 'html/blog.html',
             controller: 'blogCtrl'
         })
         .when('/services', {
-            templateUrl: 'services.html',
+            templateUrl: 'html/services.html',
             controller: 'servicesCtrl'
         })
         .when('/contact', {
-            templateUrl: 'contact.html',
+            templateUrl: 'html/contact.html',
             controller: 'contactCtrl'
         })
         .when('/faq', {
-            templateUrl: 'faq.html',
+            templateUrl: 'html/faq.html',
             controller: 'faqCtrl'
         })
         .when('/about', {
-            templateUrl: 'about.html',
+            templateUrl: 'html/about.html',
             controller: 'aboutCtrl'
         })
         //.when('/inbox/email/:id', {
