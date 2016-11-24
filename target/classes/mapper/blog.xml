@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>  <!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="blog">
+
+    <select id="queryById" parameterClass="java.lang.Long" resultClass="net.xiaocun.model.Blog">
+        SELECT * FROM user where id = #id#
+    </select>
+
+    <select id="findAll" parameterClass="java.lang.Long" resultClass="net.xiaocun.model.Blog">
+        SELECT * FROM user
+    </select>
+
+    <select id="queryByName" parameterClass="java.lang.String" resultClass="net.xiaocun.model.Blog">
+        SELECT * FROM user where name = #name#
+    </select>
+
+    <delete id="deleteById" parameterClass="long">
+        DELETE FROM user WHERE  id = #id#
+    </delete>
+
+    <update id="update" parameterClass="net.xiaocun.model.Blog">
+        UPDATE user SET name = #name#, age = #age#, salary = #salary#
+        WHERE  id = #id#
+    </update>
+
+    <insert id="insert" parameterClass="net.xiaocun.model.Blog">
+        INSERT INTO user(name, age, salary)
+        values (#name#, #age#, #salary#)
+
+        <selectKey resultClass="long" keyProperty="id">
+            select last_insert_id() as id
+        </selectKey>
+    </insert>
+
+    <select id="countUser" resultClass="int">
+        SELECT COUNT(*) FROM user
+    </select>
+
+
+</sqlMap>

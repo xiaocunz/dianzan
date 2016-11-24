@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+              http://www.springframework.org/schema/beans/spring-beans.xsd
+              http://www.springframework.org/schema/context
+              http://www.springframework.org/schema/context/spring-context.xsd
+              http://www.springframework.org/schema/mvc
+              http://www.springframework.org/schema/mvc/spring-mvc.xsd"
+       default-autowire="byName">
+
+       <!--指明 services所在包，并扫描其中的注解-->
+       <context:component-scan base-package="net.xiaocun"/>
+
+       <!-- 开启注解 -->
+       <mvc:annotation-driven/>
+
+       <!-- 数据源定义 -->
+       <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+              <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+              <property name="url" value="jdbc:mysql://127.0.0.1:3306/dianzan" />
+              <property name="username" value="root" />
+              <property name="password" value="123456" />
+       </bean>
+
+       <!-- 事务管理 -->
+       <!--<tx:annotation-driven transaction-manager="transactionManager" />-->
+       <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+              <property name="dataSource" ref="dataSource" />
+       </bean>
+
+       <bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+              <property name="dataSource" ref="dataSource" />
+              <property name="configLocation" value="classpath:config/sqlmap-config.xml" />
+              <property name="sqlMapClientProperties">
+                     <map>
+                            <entry key="baseurl">
+                                   <value type="java.lang.String"></value>
+                            </entry>
+                     </map>
+              </property>
+       </bean>
+
+       <!-- 引入redis属性配置文件 -->
+       <import resource="redis-context.xml"/>
+</beans>
