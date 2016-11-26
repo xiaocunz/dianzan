@@ -24,11 +24,10 @@ app.config(function ($routeProvider) {
             templateUrl: 'html/about.html',
             controller: 'aboutCtrl'
         })
-        //.when('/inbox/email/:id', {
-        //    templateUrl: 'views/email.html',
-        //    controller: 'EmailCtrl',
-        //    controllerAs: 'email'
-        //})
+        .when('/blogPost/:id', {
+           templateUrl: 'html/blog-post.html',
+           controller: 'blogPostCtrl'
+        })
         .otherwise({
             redirectTo: '/blog'
         });

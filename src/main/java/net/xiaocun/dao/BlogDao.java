@@ -12,6 +12,7 @@ public interface BlogDao {
 
     public Blog getByUserId(long userId);
 
-    public List<Blog> getBlogs();
+    public List<Blog> getBlogs(Blog param, int page, int pageSize);
 
+    public long countByParam(Blog param);
 }

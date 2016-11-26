@@ -1,6 +1,7 @@
 package net.xiaocun.model;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * Created by xiaocunzhang on 16/11/24.
@@ -16,6 +17,16 @@ public class Blog implements Serializable{
     private String relateUrls;
     private String bgPicture;
     private long userId;
+    private int status;
+    /**
+     * 创建时间
+     */
+    private Date gmtCreated;
+
+    /**
+     * 修改时间
+     */
+    private Date    gmtModified;
 
     public long getId() {
         return id;
@@ -95,5 +106,29 @@ public class Blog implements Serializable{
 
     public void setUserId(long userId) {
         this.userId = userId;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+    public Date getGmtCreated() {
+        return gmtCreated;
+    }
+
+    public void setGmtCreated(Date gmtCreated) {
+        this.gmtCreated = gmtCreated;
+    }
+
+    public Date getGmtModified() {
+        return gmtModified;
+    }
+
+    public void setGmtModified(Date gmtModified) {
+        this.gmtModified = gmtModified;
     }
 }

@@ -1,79 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>  <!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
         "http://ibatis.apache.org/dtd/sql-map-2.dtd">
-<sqlMap namespace="blog">
+<sqlMap namespace="BLOG">
 
-    <typeAlias alias="blogDO" type="net.xiaocun.model.Blog"/>
+    <typeAlias alias="TA-BLOG" type="net.xiaocun.model.Blog"/>
 
-    <sql id="ALL_FIELDS">
-        <![CDATA[
-        id,
-        user_id,
-        bind_id,
-        match_id,
-        match_type,
-        context,
-        status,
-        action,
-        gmt_create,
-        gmt_modified
-        ]]>
-    </sql>
-
-    <resultMap id="OrderActionResult" class="OrderActionDO">
-        <result property="id" column="id"/>
-        <result property="userId" column="user_id"/>
-        <result property="bindId" column="bind_id"/>
-        <result property="matchId" column="match_id"/>
-        <result property="matchType" column="match_type"/>
-        <result property="context" column="context"/>
-        <result property="status" column="status"/>
-        <result property="action" column="action"/>
-        <result property="gmtModified" column="gmt_modified"/>
-        <result property="gmtCreated" column="gmt_create"/>
+    <resultMap id="RM-BLOG" class="TA-BLOG">
+        <result property="id" column="id" jdbcType="NUMBERIC"
+                javaType="java.lang.Long" />
+        <result property="status" column="status" jdbcType="NUMBERIC"
+                javaType="java.lang.Integer" />
+        <result property="title" column="title" jdbcType="VARCHAR"
+                javaType="java.lang.String" />
+        <result property="content" column="content" jdbcType="VARCHAR"
+                javaType="java.lang.String" />
+        <result property="digest" column="digest" jdbcType="VARCHAR"
+                javaType="java.lang.String" />
+        <result property="globalCategory" column="global_category" jdbcType="NUMBERIC"
+                javaType="java.lang.Integer" />
+        <result property="personalCategory" column="personal_category" jdbcType="NUMBERIC"
+                javaType="java.lang.Integer" />
+        <result property="tags" column="tags" jdbcType="VARCHAR"
+                javaType="java.lang.String" />
+        <result property="relateUrls" column="relate_urls" jdbcType="VARCHAR"
+                javaType="java.lang.String" />
+        <result property="bgPicture" column="bg_picture" jdbcType="VARCHAR"
+                javaType="java.lang.String" />
+        <result property="userId" column="user_id" jdbcType="NUMBERIC"
+                javaType="java.lang.Long" />
+        <result property="gmtCreated" column="gmt_created"
+                jdbcType="DATETIME" javaType="java.util.Date" />
+        <result property="gmtModified" column="gmt_modified"
+                jdbcType="DATETIME" javaType="java.util.Date" />
     </resultMap>
 
-    <select id="listByMatchIdAndType" parameterClass="java.util.Map" resultMap="OrderActionResult">
-        SELECT
-        <include refid="ALL_FIELDS"/>
-        FROM `bind_order_action`
-        WHERE  match_id = #matchId#
-        AND match_type = #matchType#
-        AND ACTION = #action#
+    <sql id="QUERY-BY-PARAM">
+        <isNotEmpty property="id" prepend="AND">
+            id = #id#
+        </isNotEmpty>
+        <isNotEmpty property="title" prepend="AND">
+            title like #title#
+        </isNotEmpty>
+        <isNotEmpty property="globalCategory" prepend="AND">
+            global_category  = #globalCategory#
+        </isNotEmpty>
+        <isNotEmpty property="personalCategory" prepend="AND">
+            personal_category=#personalCategory#
+        </isNotEmpty>
+        <isNotEmpty property="userId" prepend="AND">
+            user_id = #userId#
+        </isNotEmpty>
+    </sql>
+
+    <select id="QUERY-BLOG-BY-PARAM" parameterClass="java.util.Map" resultMap="RM-BLOG">
+
+        select * from blog
+        <![CDATA[
+				WHERE 1 = 1
+		]]>
+        <dynamic>
+            <include refid="QUERY-BY-PARAM" />
+        </dynamic>
+        ORDER BY id DESC LIMIT #offset#, #count#
     </select>
 
-    <select id="queryById" parameterClass="java.lang.Long" resultClass="blogDO">
-        SELECT * FROM user where id = #id#
+    <select id="QUERY-BLOG-BY-ID" parameterClass="java.lang.Long" resultMap="RM-BLOG">
+        select * from blog
+            where id = #id#
     </select>
 
-    <select id="findAll" parameterClass="java.lang.Long" resultClass="net.xiaocun.model.Blog">
-        SELECT * FROM user
+    <select id="COUNT-BLOG-BY-PARAM"
+            parameterClass="java.util.Map" resultClass="java.lang.Long">
+        <![CDATA[
+				SELECT count(1) FROM blog
+				    WHERE 1 = 1
+			]]>
+        <dynamic>
+            <include refid="QUERY-BY-PARAM" />
+        </dynamic>
     </select>
-
-    <select id="queryByName" parameterClass="java.lang.String" resultClass="net.xiaocun.model.Blog">
-        SELECT * FROM user where name = #name#
-    </select>
-
-    <delete id="deleteById" parameterClass="long">
-        DELETE FROM user WHERE  id = #id#
-    </delete>
-
-    <update id="update" parameterClass="net.xiaocun.model.Blog">
-        UPDATE user SET name = #name#, age = #age#, salary = #salary#
-        WHERE  id = #id#
-    </update>
-
-    <insert id="insert" parameterClass="net.xiaocun.model.Blog">
-        INSERT INTO user(name, age, salary)
-        values (#name#, #age#, #salary#)
-
-        <selectKey resultClass="long" keyProperty="id">
-            select last_insert_id() as id
-        </selectKey>
-    </insert>
-
-    <select id="countUser" resultClass="int">
-        SELECT COUNT(*) FROM user
-    </select>
-
 
 </sqlMap>
