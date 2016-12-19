@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>  <!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="COMMENT">
+
+    <typeAlias alias="TA-COMMENT" type="net.xiaocun.model.Comment"/>
+
+    <resultMap id="RM-COMMENT" class="TA-COMMENT">
+        <result property="id" column="id" jdbcType="NUMBERIC"
+                javaType="java.lang.Long" />
+        <result property="status" column="status" jdbcType="NUMBERIC"
+                javaType="java.lang.Integer" />
+        <result property="userName" column="user_name" jdbcType="VARCHAR"
+                javaType="java.lang.String" />
+        <result property="content" column="content" jdbcType="VARCHAR"
+                javaType="java.lang.String" />
+        <result property="blogId" column="blog_id" jdbcType="NUMBERIC"
+                javaType="java.lang.Long" />
+        <result property="gmtCreated" column="gmt_created"
+                jdbcType="DATETIME" javaType="java.util.Date" />
+    </resultMap>
+
+    <sql id="QUERY-BY-PARAM">
+        <isNotEmpty property="id" prepend="AND">
+            id = #id#
+        </isNotEmpty>
+        <isNotEmpty property="userName" prepend="AND">
+            user_name = #userName#
+        </isNotEmpty>
+        <isNotEmpty property="blogId" prepend="AND">
+            blog_id  = #blogId#
+        </isNotEmpty>
+        <isNotEmpty property="content" prepend="AND">
+            content like #content#
+        </isNotEmpty>
+        <isNotEmpty property="gmtCreated" prepend="AND">
+            gmt_created = #gmtCreated#
+        </isNotEmpty>
+        <isNotEmpty property="status" prepend="AND">
+            status = #status#
+        </isNotEmpty>
+    </sql>
+
+    <select id="QUERY-COMMENT-BY-PARAM" parameterClass="java.util.Map" resultMap="RM-COMMENT">
+
+        select * from comment
+        <![CDATA[
+				WHERE 1 = 1
+		]]>
+        <dynamic>
+            <include refid="QUERY-BY-PARAM" />
+        </dynamic>
+        ORDER BY id DESC LIMIT #offset#, #count#
+    </select>
+
+    <!-- insert -->
+    <insert id="INSERT-COMMENT" parameterClass="TA-COMMENT">
+        <![CDATA[
+			INSERT INTO comment(user_name, content, status,
+                   blog_id, gmt_created)
+			VALUES(#userName#, #content#, #status#, #blogId#, now())
+		]]>
+        <selectKey type="post" resultClass="java.lang.Long">
+            SELECT LAST_INSERT_ID() AS ID
+        </selectKey>
+    </insert>
+
+    <select id="COUNT-COMMENT-BY-PARAM"
+            parameterClass="java.util.Map" resultClass="java.lang.Long">
+        <![CDATA[
+				SELECT count(1) FROM comment
+				    WHERE 1 = 1
+			]]>
+        <dynamic>
+            <include refid="QUERY-BY-PARAM" />
+        </dynamic>
+    </select>
+
+</sqlMap>

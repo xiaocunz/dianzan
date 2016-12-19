@@ -10,9 +10,9 @@ import java.util.List;
 public interface BlogDao {
     public Blog getByBlogId(long blogId);
 
-    public Blog getByUserId(long userId);
-
     public List<Blog> getBlogs(Blog param, int page, int pageSize);
 
     public long countByParam(Blog param);
+
+    public Long insert(Blog blog);
 }

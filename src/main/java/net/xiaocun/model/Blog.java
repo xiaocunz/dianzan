@@ -16,7 +16,7 @@ public class Blog implements Serializable{
     private String tags;
     private String relateUrls;
     private String bgPicture;
-    private long userId;
+    private String userName;
     private int status;
     /**
      * 创建时间
@@ -100,12 +100,12 @@ public class Blog implements Serializable{
         this.bgPicture = bgPicture;
     }
 
-    public long getUserId() {
-        return userId;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUserId(long userId) {
-        this.userId = userId;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public int getStatus() {

@@ -14,4 +14,6 @@ public interface BlogService {
     public long countBlogByParam(Blog blog);
 
     public PageResult<Blog> getBlogByPram(Blog blog, int page, int pageSize);
+
+    public Blog writeBlog(Blog blog);
 }

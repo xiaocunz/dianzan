@@ -35,4 +35,10 @@ public class BlogServiceImpl implements BlogService {
         result.setData(data);
         return result;
     }
+
+    public Blog writeBlog(Blog blog) {
+        Long blogId = blogDao.insert(blog);
+        blog.setId(blogId);
+        return blog;
+    }
 }

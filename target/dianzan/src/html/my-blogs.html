@@ -1,0 +1,16 @@
+<div class="container">
+    <div id="blog" class="row">
+
+        <div class="col-sm-2 paddingTop20">
+            <nav class="nav-sidebar">
+                <ul class="nav">
+                    <li ng-class="{ 'active': category.id == search.categoryId }" ng-click="chooseCategory(category.id);"  ng-repeat="category in pageCategoryResult.data"><a href="javascript:;"><span ng-if="category.id == search.categoryId" class="glyphicon glyphicon-star"></span> {{category.name}}</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-10 blogShort" ng-repeat="blog in pageBlogResult.data" style="height: 30px; margin-top: 15px;">
+            <a ng-href="#/blogPost/{{blog.id}}">{{blog.title}}</a>
+            <span style="float: right;">Posted on {{blog.gmtCreated | date:'medium'}}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>  <!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="USER">
+
+    <typeAlias alias="TA-USER" type="net.xiaocun.model.User"/>
+
+    <sql id="QUERY-BY-PARAM">
+        <isNotEmpty property="id" prepend="AND">
+            id = #id#
+        </isNotEmpty>
+        <isNotEmpty property="userName" prepend="AND">
+            user_name = #userName#
+        </isNotEmpty>
+        <isNotEmpty property="password" prepend="AND">
+            password  = #password#
+        </isNotEmpty>
+        <isNotEmpty property="telphone" prepend="AND">
+            telphone=#telphone#
+        </isNotEmpty>
+        <isNotEmpty property="email" prepend="AND">
+            email = #email#
+        </isNotEmpty>
+    </sql>
+
+    <resultMap id="RM-USER" class="TA-USER">
+        <result property="id" column="id" jdbcType="NUMBERIC"
+                javaType="java.lang.Long" />
+        <result property="status" column="status" jdbcType="NUMBERIC"
+                javaType="java.lang.Integer" />
+        <result property="userName" column="user_name" jdbcType="VARCHAR"
+                javaType="java.lang.String" />
+        <result property="nickName" column="nick_name" jdbcType="VARCHAR"
+                javaType="java.lang.String" />
+        <result property="telphone" column="telphone" jdbcType="VARCHAR"
+                javaType="java.lang.String" />
+        <result property="email" column="email" jdbcType="VARCHAR"
+                javaType="java.lang.String" />
+    </resultMap>
+
+    <select id="QUERY-USER-BY-ID" parameterClass="java.lang.Long" resultMap="RM-USER">
+        select * from user where id = #id#
+    </select>
+
+    <select id="QUERY-USER-BY-NICKNAME" parameterClass="java.lang.String" resultMap="RM-USER">
+        select * from user where nick_name = #nickName#
+    </select>
+
+    <select id="QUERY-USER-BY-PARAM" parameterClass="java.util.Map" resultMap="RM-USER">
+        select * from user
+        <![CDATA[
+				WHERE 1 = 1
+		]]>
+        <dynamic>
+            <include refid="QUERY-BY-PARAM" />
+        </dynamic>
+    </select>
+
+    <!-- insert -->
+    <insert id="INSERT-USER" parameterClass="TA-USER">
+        <![CDATA[
+			INSERT INTO user(user_name, password, nick_name,
+                   telphone, email, status)
+			VALUES(#userName#, #password#, #nickName#, #telphone#, #email#, #status#)
+		]]>
+        <selectKey type="post" resultClass="java.lang.Long">
+            SELECT LAST_INSERT_ID() AS ID
+        </selectKey>
+    </insert>
+
+</sqlMap>

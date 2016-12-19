@@ -1,5 +1,5 @@
 var app = angular.module('app', [
-    'ngRoute'
+    'ngRoute', 'ngCookies'
 ]);
 
 app.config(function ($routeProvider) {
@@ -7,6 +7,10 @@ app.config(function ($routeProvider) {
         .when('/blog', {
             templateUrl: 'html/blog.html',
             controller: 'blogCtrl'
+        })
+        .when('/newBlog', {
+            templateUrl: 'html/new-blog.html',
+            controller: 'newBlogCtrl'
         })
         .when('/services', {
             templateUrl: 'html/services.html',
@@ -27,6 +31,18 @@ app.config(function ($routeProvider) {
         .when('/blogPost/:id', {
            templateUrl: 'html/blog-post.html',
            controller: 'blogPostCtrl'
+        })
+        .when('/login', {
+            templateUrl: 'html/login.html',
+            controller: 'loginCtrl'
+        })
+        .when('/userProfile', {
+            templateUrl: 'html/user-profile.html',
+            controller: 'userProfileCtrl'
+        })
+        .when('/myBlogs', {
+            templateUrl: 'html/my-blogs.html',
+            controller: 'myBlogsCtrl'
         })
         .otherwise({
             redirectTo: '/blog'

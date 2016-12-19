@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>  <!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="CATEGORY">
+
+    <typeAlias alias="TA-CATEGORY" type="net.xiaocun.model.Category"/>
+
+    <resultMap id="RM-CATEGORY" class="TA-CATEGORY">
+        <result property="id" column="id" jdbcType="NUMBERIC"
+                javaType="java.lang.Integer" />
+        <result property="status" column="status" jdbcType="NUMBERIC"
+                javaType="java.lang.Integer" />
+        <result property="code" column="code" jdbcType="VARCHAR"
+                javaType="java.lang.String" />
+        <result property="name" column="name" jdbcType="VARCHAR"
+                javaType="java.lang.String" />
+        <result property="parentId" column="parent_id" jdbcType="NUMBERIC"
+                javaType="java.lang.Integer" />
+    </resultMap>
+
+    <sql id="QUERY-BY-PARAM">
+        <isNotEmpty property="id" prepend="AND">
+            id = #id#
+        </isNotEmpty>
+        <isNotEmpty property="status" prepend="AND">
+            status  = #status#
+        </isNotEmpty>
+        <isNotEmpty property="code" prepend="AND">
+            code=#code#
+        </isNotEmpty>
+        <isNotEmpty property="name" prepend="AND">
+            name = #name#
+        </isNotEmpty>
+        <isNotEmpty property="parentId" prepend="AND">
+            parent_id  = #parentId#
+        </isNotEmpty>
+    </sql>
+
+    <select id="QUERY-CATEGORY-BY-PARAM" parameterClass="java.util.Map" resultMap="RM-CATEGORY">
+
+        select * from category
+        <![CDATA[
+				WHERE 1 = 1
+		]]>
+        <dynamic>
+            <include refid="QUERY-BY-PARAM" />
+        </dynamic>
+        ORDER BY id DESC LIMIT #offset#, #count#
+    </select>
+
+    <select id="QUERY-CATEGORY-BY-ID" parameterClass="java.lang.Integer" resultMap="RM-CATEGORY">
+        select * from category
+        where id = #id#
+    </select>
+
+    <select id="COUNT-CATEGORY-BY-PARAM"
+            parameterClass="java.util.Map" resultClass="java.lang.Integer">
+        <![CDATA[
+				SELECT count(1) FROM category
+				    WHERE 1 = 1
+			]]>
+        <dynamic>
+            <include refid="QUERY-BY-PARAM" />
+        </dynamic>
+    </select>
+
+    <!-- insert -->
+    <insert id="INSERT-CATEGORY" parameterClass="TA-CATEGORY">
+        <![CDATA[
+			INSERT INTO category(code, name, parent_id, status)
+			VALUES(#code#, #name#, #parentId#, #status#)
+		]]>
+        <selectKey type="post" resultClass="java.lang.Integer">
+            SELECT LAST_INSERT_ID() AS ID
+        </selectKey>
+    </insert>
+
+</sqlMap>

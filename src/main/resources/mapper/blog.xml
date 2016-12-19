@@ -25,8 +25,8 @@
                 javaType="java.lang.String" />
         <result property="bgPicture" column="bg_picture" jdbcType="VARCHAR"
                 javaType="java.lang.String" />
-        <result property="userId" column="user_id" jdbcType="NUMBERIC"
-                javaType="java.lang.Long" />
+        <result property="userName" column="user_name" jdbcType="VARCHAR"
+                javaType="java.lang.String" />
         <result property="gmtCreated" column="gmt_created"
                 jdbcType="DATETIME" javaType="java.util.Date" />
         <result property="gmtModified" column="gmt_modified"
@@ -46,8 +46,8 @@
         <isNotEmpty property="personalCategory" prepend="AND">
             personal_category=#personalCategory#
         </isNotEmpty>
-        <isNotEmpty property="userId" prepend="AND">
-            user_id = #userId#
+        <isNotEmpty property="userName" prepend="AND">
+            user_name = #userName#
         </isNotEmpty>
     </sql>
 
@@ -78,5 +78,17 @@
             <include refid="QUERY-BY-PARAM" />
         </dynamic>
     </select>
+
+    <!-- insert -->
+    <insert id="INSERT-BLOG" parameterClass="TA-BLOG">
+        <![CDATA[
+			INSERT INTO blog(title, content, digest,
+                   global_category, personal_category,tags,relate_urls,bg_picture,user_name,status,gmt_created,gmt_modified)
+			VALUES(#title#, #content#, #digest#, #globalCategory#,#personalCategory#,#tags#,#relateUrls#,#bgPicture#,#userName#,#status#, now(), now())
+		]]>
+        <selectKey type="post" resultClass="java.lang.Long">
+            SELECT LAST_INSERT_ID() AS ID
+        </selectKey>
+    </insert>
 
 </sqlMap>

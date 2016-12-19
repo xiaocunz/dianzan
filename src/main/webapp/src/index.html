@@ -16,6 +16,10 @@
 
     <!-- Custom CSS -->
     <link href="html/css/modern-business.css" rel="stylesheet">
+    <link href="html/css/login.css" rel="stylesheet">
+    <link href="html/css/custom.css" rel="stylesheet">
+    <link href="html/css/user-profile.css" rel="stylesheet">
+    <link href="html/css/my-blogs.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="html/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -49,8 +53,11 @@
                     <li>
                         <a ng-href="#/blog">Blog</a>
                     </li>
+                    <!--<li>-->
+                        <!--<a href="#/services">Services</a>-->
+                    <!--</li>-->
                     <li>
-                        <a href="#/services">Services</a>
+                        <a href="#/newBlog">New blog</a>
                     </li>
                     <li>
                         <a href="#/contact">Contact</a>
@@ -95,19 +102,25 @@
                     <li>
                         <a ng-href="#/about">About</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Me <b class="caret"></b></a>
+                    <li class="dropdown" ng-if="indexIsLogin == true">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{indexUserName}}<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="html/full-width.html">Profile</a>
+                                <a ng-href="#/userProfile">Profile</a>
                             </li>
                             <li>
-                                <a href="html/sidebar.html">Login Out</a>
+                                <a ng-href="#/myBlogs">My Blogs</a>
+                            </li>
+                            <li>
+                                <a ng-click="logout();">Login Out</a>
                             </li>
                             <!--<li>-->
                                 <!--<a href="pricing.html">Pricing Table</a>-->
                             <!--</li>-->
                         </ul>
+                    </li>
+                    <li ng-if="indexIsLogin == false">
+                        <a ng-href="#/login">Login</a>
                     </li>
                 </ul>
             </div>
@@ -124,6 +137,7 @@
     <!-- angular -->
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular/angular-route.min.js"></script>
+    <script src="lib/angular/angular-cookies.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="html/js/bootstrap.min.js"></script>
@@ -137,9 +151,17 @@
     <script src="script/controller/servicesCtrl.js"></script>
     <script src="script/controller/faqCtrl.js"></script>
     <script src="script/controller/blogPostCtrl.js"></script>
+    <script src="script/controller/loginCtrl.js"></script>
+    <script src="script/controller/newBlogCtrl.js"></script>
+    <script src="script/controller/userProfileCtrl.js"></script>
+    <script src="script/controller/myBlogsCtrl.js"></script>
+
 
     <!-- service file -->
     <script src="script/service/Blog.js"></script>
+    <script src="script/service/User.js"></script>
+    <script src="script/service/Comment.js"></script>
+    <script src="script/service/Category.js"></script>
 
     <!-- Script to Activate the Carousel -->
     <script>

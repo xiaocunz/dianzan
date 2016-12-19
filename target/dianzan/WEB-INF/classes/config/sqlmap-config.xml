@@ -4,4 +4,7 @@
     <settings enhancementEnabled="true" lazyLoadingEnabled="true"
               useStatementNamespaces="true" />
     <sqlMap resource="mapper/blog.xml" />
+    <sqlMap resource="mapper/user.xml" />
+    <sqlMap resource="mapper/comment.xml" />
+    <sqlMap resource="mapper/category.xml" />
 </sqlMapConfig>
