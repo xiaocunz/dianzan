@@ -2,85 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93838840-291c-402e-b7ba-3481460ab62c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/controller/CategoryController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/controller/CommentController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/controller/UserController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/dao/CategoryDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/dao/CommentDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/dao/UserDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/dao/impl/CategoryDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/dao/impl/CommentDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/dao/impl/UserDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/model/Category.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/model/Comment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/model/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/service/CategoryService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/service/CommentService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/service/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/service/impl/CategoryServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/service/impl/CommentServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/service/impl/UserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/category.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/comment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/user.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/html/css/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/html/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/html/css/my-blogs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/html/css/user-profile.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/html/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/html/my-blogs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/html/new-blog.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/html/user-profile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/lib/angular/angular-cookies.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/script/controller/loginCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/script/controller/myBlogsCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/script/controller/newBlogCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/script/controller/userProfileCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/script/service/Category.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/script/service/Comment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/script/service/User.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/xiaocun/controller/BlogController.class" afterPath="$PROJECT_DIR$/target/classes/net/xiaocun/controller/BlogController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/xiaocun/dao/BlogDao.class" afterPath="$PROJECT_DIR$/target/classes/net/xiaocun/dao/BlogDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/xiaocun/dao/impl/BlogDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/net/xiaocun/dao/impl/BlogDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/xiaocun/model/Blog.class" afterPath="$PROJECT_DIR$/target/classes/net/xiaocun/model/Blog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/xiaocun/service/BlogService.class" afterPath="$PROJECT_DIR$/target/classes/net/xiaocun/service/BlogService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/xiaocun/service/impl/BlogServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/net/xiaocun/service/impl/BlogServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dianzan/WEB-INF/classes/net/xiaocun/controller/BlogController.class" afterPath="$PROJECT_DIR$/target/dianzan/WEB-INF/classes/net/xiaocun/controller/BlogController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dianzan/WEB-INF/classes/net/xiaocun/dao/BlogDao.class" afterPath="$PROJECT_DIR$/target/dianzan/WEB-INF/classes/net/xiaocun/dao/BlogDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dianzan/WEB-INF/classes/net/xiaocun/dao/impl/BlogDaoImpl.class" afterPath="$PROJECT_DIR$/target/dianzan/WEB-INF/classes/net/xiaocun/dao/impl/BlogDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dianzan/WEB-INF/classes/net/xiaocun/model/Blog.class" afterPath="$PROJECT_DIR$/target/dianzan/WEB-INF/classes/net/xiaocun/model/Blog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dianzan/WEB-INF/classes/net/xiaocun/service/BlogService.class" afterPath="$PROJECT_DIR$/target/dianzan/WEB-INF/classes/net/xiaocun/service/BlogService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dianzan/WEB-INF/classes/net/xiaocun/service/impl/BlogServiceImpl.class" afterPath="$PROJECT_DIR$/target/dianzan/WEB-INF/classes/net/xiaocun/service/impl/BlogServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/xiaocun/controller/BlogController.java" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/controller/BlogController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/xiaocun/dao/BlogDao.java" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/dao/BlogDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/xiaocun/dao/impl/BlogDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/dao/impl/BlogDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/xiaocun/model/Blog.java" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/model/Blog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/xiaocun/service/BlogService.java" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/service/BlogService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/xiaocun/service/impl/BlogServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/net/xiaocun/service/impl/BlogServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/sqlmap-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/sqlmap-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/blog.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/blog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/html/blog-post.html" afterPath="$PROJECT_DIR$/src/main/webapp/src/html/blog-post.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/html/blog.html" afterPath="$PROJECT_DIR$/src/main/webapp/src/html/blog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/script/app.js" afterPath="$PROJECT_DIR$/src/main/webapp/src/script/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/script/controller/blogCtrl.js" afterPath="$PROJECT_DIR$/src/main/webapp/src/script/controller/blogCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/script/controller/blogPostCtrl.js" afterPath="$PROJECT_DIR$/src/main/webapp/src/script/controller/blogPostCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/script/controller/indexCtrl.js" afterPath="$PROJECT_DIR$/src/main/webapp/src/script/controller/indexCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/script/service/Blog.js" afterPath="$PROJECT_DIR$/src/main/webapp/src/script/service/Blog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config/sqlmap-config.xml" afterPath="$PROJECT_DIR$/target/classes/config/sqlmap-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/blog.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/blog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dianzan/WEB-INF/classes/config/sqlmap-config.xml" afterPath="$PROJECT_DIR$/target/dianzan/WEB-INF/classes/config/sqlmap-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dianzan/WEB-INF/classes/mapper/blog.xml" afterPath="$PROJECT_DIR$/target/dianzan/WEB-INF/classes/mapper/blog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dianzan/src/html/blog-post.html" afterPath="$PROJECT_DIR$/target/dianzan/src/html/blog-post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dianzan/src/html/blog.html" afterPath="$PROJECT_DIR$/target/dianzan/src/html/blog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dianzan/src/index.html" afterPath="$PROJECT_DIR$/target/dianzan/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dianzan/src/script/app.js" afterPath="$PROJECT_DIR$/target/dianzan/src/script/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dianzan/src/script/controller/blogCtrl.js" afterPath="$PROJECT_DIR$/target/dianzan/src/script/controller/blogCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dianzan/src/script/controller/blogPostCtrl.js" afterPath="$PROJECT_DIR$/target/dianzan/src/script/controller/blogPostCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dianzan/src/script/controller/indexCtrl.js" afterPath="$PROJECT_DIR$/target/dianzan/src/script/controller/indexCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dianzan/src/script/service/Blog.js" afterPath="$PROJECT_DIR$/target/dianzan/src/script/service/Blog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/script/controller/loginCtrl.js" afterPath="$PROJECT_DIR$/src/main/webapp/src/script/controller/loginCtrl.js" />
     </list>
     <ignored path="dianzan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,97 +26,109 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Blog.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/src/script/service/Blog.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="74" lean-forward="true" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user-profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/src/html/user-profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="108" lean-forward="true" selection-start-line="23" selection-start-column="108" selection-end-line="23" selection-end-column="108" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="userProfileCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/src/script/controller/userProfileCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blogCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/src/script/controller/blogCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="22" column="87" lean-forward="false" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="87" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loginCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/src/script/controller/loginCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="50" lean-forward="false" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlogController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BlogController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/xiaocun/controller/BlogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="24" column="84" lean-forward="false" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
+            <state relative-caret-position="126">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my-blogs.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/src/html/my-blogs.html">
+      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/xiaocun/model/Category.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="121" lean-forward="true" selection-start-line="10" selection-start-column="121" selection-end-line="10" selection-end-column="121" />
+            <state relative-caret-position="133">
+              <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginCtrl.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/src/script/controller/loginCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#459#890#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/src/index.html">
+      <file leaf-file-name="Comment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/xiaocun/model/Comment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="111" column="53" lean-forward="false" selection-start-line="111" selection-start-column="53" selection-end-line="111" selection-end-column="53" />
+            <state relative-caret-position="-235">
+              <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/src/script/app.js">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/xiaocun/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="23" />
+            <state relative-caret-position="-311">
+              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="22" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/blog.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="32" column="60" lean-forward="true" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+              <folding>
+                <element signature="n#select#1;n#sqlMap#0;n#!!top" expanded="false" />
+                <element signature="n#select#2;n#sqlMap#0;n#!!top" expanded="false" />
+                <marker date="1482197892359" expanded="true" signature="2602:2793" ph="select * fro... blog" />
+                <marker date="1482197892359" expanded="true" signature="2904:2950" ph="select * fro... blog" />
+                <marker date="1482197892359" expanded="true" signature="3098:3143" ph="SELECT count... blog" />
+                <marker date="1482197892359" expanded="true" signature="3346:3654" ph="INSERT INTO blog... " />
+                <marker date="1482197892359" expanded="true" signature="3734:3763" ph="SELECT LAST_... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Blog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/xiaocun/model/Blog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+              <folding>
+                <element signature="e#812#813#0" expanded="true" />
+                <element signature="e#846#847#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/src/html/blog.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="28" column="65" lean-forward="false" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="65" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#1448#1454#0" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -201,8 +136,8 @@
       <file leaf-file-name="myBlogsCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/src/script/controller/myBlogsCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+            <state relative-caret-position="589">
+              <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
               <folding>
                 <element signature="e#565#644#0" expanded="false" />
                 <element signature="e#1174#1269#0" expanded="false" />
@@ -288,8 +223,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/blog.xml" />
         <option value="$PROJECT_DIR$/src/main/java/net/xiaocun/dao/impl/BlogDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/src/html/css/custom.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/src/html/blog.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/src/script/controller/loginCtrl.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/src/html/css/user-profile.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/src/html/user-profile.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/src/script/controller/userProfileCtrl.js" />
@@ -301,6 +234,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/src/script/service/Blog.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/src/script/controller/myBlogsCtrl.js" />
         <option value="$PROJECT_DIR$/src/main/java/net/xiaocun/controller/BlogController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/src/html/blog.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/src/script/controller/loginCtrl.js" />
       </list>
     </option>
   </component>
@@ -468,6 +403,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -644,187 +581,9 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dianzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dianzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dianzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dianzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dianzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dianzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dianzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dianzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dianzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dianzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xiaocun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dianzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dianzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xiaocun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1319,7 +1078,6 @@
       <method />
     </configuration>
     <configuration default="false" name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.64.842" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8082/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="dianzan:war exploded">
@@ -1331,7 +1089,7 @@
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_dianzan_2" />
         <option name="HTTP_PORT" value="8082" />
-        <option name="JNDI_PORT" value="3099" />
+        <option name="JNDI_PORT" value="4099" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -1452,21 +1210,22 @@
       <workItem from="1480402140114" duration="6148000" />
       <workItem from="1480408481528" duration="1877000" />
       <workItem from="1480410444966" duration="8095000" />
+      <workItem from="1482198785097" duration="2002000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97340000" />
+    <option name="totallyTimeSpent" value="99342000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25078863" sideWeight="0.4297218" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4216366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06149341" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16717096" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1474,9 +1233,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3895899" sideWeight="0.57027817" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43770492" sideWeight="0.57027817" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32334384" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40327868" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1485,7 +1244,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2192429" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19033675" sideWeight="0.4858044" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24432677" sideWeight="0.4858044" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18448023" sideWeight="0.51338583" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1522,13 +1281,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/src/html/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/xiaocun/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1549,13 +1301,6 @@
           <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
             <element signature="n#resultMap#0;n#sqlMap#0;n#!!top" expanded="false" />
-            <marker date="1480315808891" expanded="true" signature="1675:1709" ph="select * fro... user" />
-            <marker date="1480315808891" expanded="true" signature="1828:1875" ph="select * fro... user" />
-            <marker date="1480315808891" expanded="true" signature="1846:1875" ph="select * fro... blog" />
-            <marker date="1480315808891" expanded="true" signature="1988:2040" ph="select * fro... user" />
-            <marker date="1480315808891" expanded="true" signature="1988:2131" ph="select * fro... user" />
-            <marker date="1480315808891" expanded="true" signature="2242:2411" ph="INSERT INTO user... " />
-            <marker date="1480315808891" expanded="true" signature="2491:2520" ph="SELECT LAST_... " />
           </folding>
         </state>
       </provider>
@@ -1574,13 +1319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/xiaocun/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/xiaocun/dao/impl/CommentDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1592,12 +1330,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="54" column="4" lean-forward="false" selection-start-line="54" selection-start-column="4" selection-end-line="64" selection-end-column="13" />
-          <folding>
-            <marker date="1480309075819" expanded="true" signature="1820:2014" ph="select * fro... comment" />
-            <marker date="1480309075819" expanded="true" signature="2132:2280" ph="INSERT INTO comment... " />
-            <marker date="1480309075819" expanded="true" signature="2360:2389" ph="SELECT LAST_... " />
-            <marker date="1480309075819" expanded="true" signature="2561:2609" ph="SELECT count... comment" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1665,13 +1398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/xiaocun/model/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/xiaocun/service/CategoryService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1699,11 +1425,6 @@
           <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
           <folding>
             <element signature="n#sql#0;n#sqlMap#0;n#!!top" expanded="false" />
-            <marker date="1480405879467" expanded="true" signature="1560:1755" ph="select * fro... category" />
-            <marker date="1480405879467" expanded="true" signature="1877:1923" ph="select * fro... category" />
-            <marker date="1480405879467" expanded="true" signature="2078:2127" ph="SELECT count... category" />
-            <marker date="1480405879467" expanded="true" signature="2338:2437" ph="INSERT INTO category... " />
-            <marker date="1480405879467" expanded="true" signature="2520:2549" ph="SELECT LAST_... " />
           </folding>
         </state>
       </provider>
@@ -1712,13 +1433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
           <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#533#534#0" expanded="false" />
-            <element signature="e#579#580#0" expanded="false" />
-            <element signature="e#637#638#0" expanded="false" />
-            <element signature="e#694#695#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1736,7 +1450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1744,7 +1457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1760,18 +1472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/xiaocun/model/Blog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
-          <folding>
-            <element signature="e#812#813#0" expanded="false" />
-            <element signature="e#846#847#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1779,7 +1479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1787,24 +1486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="31" column="46" lean-forward="false" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/blog.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="40" column="29" lean-forward="false" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-          <folding>
-            <element signature="n#resultMap#0;n#sqlMap#0;n#!!top" expanded="false" />
-            <element signature="n#select#1;n#sqlMap#0;n#!!top" expanded="false" />
-            <element signature="n#select#2;n#sqlMap#0;n#!!top" expanded="false" />
-            <marker date="1480411962698" expanded="true" signature="2602:2793" ph="select * fro... blog" />
-            <marker date="1480411962698" expanded="true" signature="2904:2950" ph="select * fro... blog" />
-            <marker date="1480411962698" expanded="true" signature="3098:3143" ph="SELECT count... blog" />
-            <marker date="1480411962698" expanded="true" signature="3346:3654" ph="INSERT INTO blog... " />
-            <marker date="1480411962698" expanded="true" signature="3734:3763" ph="SELECT LAST_... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1820,7 +1501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1828,7 +1508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1844,7 +1523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="107" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="107" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1852,7 +1530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="90" lean-forward="false" selection-start-line="0" selection-start-column="90" selection-end-line="0" selection-end-column="90" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1860,43 +1537,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
           <caret line="48" column="49" lean-forward="false" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/src/html/blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="55" />
-          <folding>
-            <element signature="e#1637#1643#0" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <marker date="1480413080627" expanded="true" signature="1029:1164" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/src/html/user-profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
-          <caret line="23" column="108" lean-forward="true" selection-start-line="23" selection-start-column="108" selection-end-line="23" selection-end-column="108" />
+          <caret line="23" column="108" lean-forward="false" selection-start-line="23" selection-start-column="108" selection-end-line="23" selection-end-column="108" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/src/script/controller/loginCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="50" lean-forward="false" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="2109">
           <caret line="111" column="53" lean-forward="false" selection-start-line="111" selection-start-column="53" selection-end-line="111" selection-end-column="53" />
           <folding />
         </state>
@@ -1904,7 +1560,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/src/script/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
+        <state relative-caret-position="798">
           <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="23" />
           <folding />
         </state>
@@ -1913,7 +1569,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/src/script/service/Blog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="13" column="74" lean-forward="true" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
+          <caret line="13" column="74" lean-forward="false" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
           <folding />
         </state>
       </provider>
@@ -1921,7 +1577,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/src/html/my-blogs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="121" lean-forward="true" selection-start-line="10" selection-start-column="121" selection-end-line="10" selection-end-column="121" />
+          <caret line="10" column="121" lean-forward="false" selection-start-line="10" selection-start-column="121" selection-end-line="10" selection-end-column="121" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1931,7 +1587,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/src/script/controller/blogCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="418">
           <caret line="22" column="87" lean-forward="false" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="87" />
           <folding />
         </state>
@@ -1940,15 +1596,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/src/script/controller/userProfileCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/src/script/controller/myBlogsCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        <state relative-caret-position="589">
+          <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
           <folding>
             <element signature="e#565#644#0" expanded="false" />
             <element signature="e#1174#1269#0" expanded="false" />
@@ -1960,9 +1616,82 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/xiaocun/controller/BlogController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="24" column="84" lean-forward="false" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
+        <state relative-caret-position="126">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/xiaocun/model/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/xiaocun/model/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-235">
+          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/xiaocun/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-311">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/xiaocun/model/Blog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/blog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="32" column="60" lean-forward="true" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+          <folding>
+            <element signature="n#select#1;n#sqlMap#0;n#!!top" expanded="false" />
+            <element signature="n#select#2;n#sqlMap#0;n#!!top" expanded="false" />
+            <marker date="1482197892359" expanded="true" signature="2602:2793" ph="select * fro... blog" />
+            <marker date="1482197892359" expanded="true" signature="2904:2950" ph="select * fro... blog" />
+            <marker date="1482197892359" expanded="true" signature="3098:3143" ph="SELECT count... blog" />
+            <marker date="1482197892359" expanded="true" signature="3346:3654" ph="INSERT INTO blog... " />
+            <marker date="1482197892359" expanded="true" signature="3734:3763" ph="SELECT LAST_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/src/html/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="28" column="65" lean-forward="false" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#1448#1454#0" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/src/script/controller/loginCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <element signature="e#459#890#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

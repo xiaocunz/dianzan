@@ -25,7 +25,7 @@ app.controller('loginCtrl', ['$scope', '$rootScope', '$location', '$cookies', 'U
     $scope.register = function() {
         UserService.register(registerModel).then(function successCallback(response) {
             var result = response.data;
-            if (data != null) {
+            if (result != null) {
                 setUserInfo(result);
                 $location.path('blog');
             } else {
